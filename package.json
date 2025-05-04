@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "vuepress dev .",
     "start": "vuepress dev .",
+    "clean": "rm -rf .vuepress/dist",
     "build": "vuepress build .",
     "deploy": "gh-pages -d .vuepress/dist"
   },

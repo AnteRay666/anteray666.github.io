@@ -20,11 +20,11 @@ bannerBrand:
   socialLinks:
     - {
         icon: "LogoGithub",
-        link: "https://github.com/vuepress-reco/vuepress-theme-reco",
+        link: "https://github.com/AnteRay666/anteray666.github.io",
       }
 blog:
   socialLinks:
-    - { icon: "LogoGithub", link: "https://github.com/recoluan" }
+    - { icon: "LogoGithub", link: "https://github.com/AnteRay666" }
 isShowTitleInHome: true
 actionText: About
 actionLink: /views/other/about
