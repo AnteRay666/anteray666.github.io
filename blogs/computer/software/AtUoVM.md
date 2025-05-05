@@ -4,7 +4,7 @@ date: 2025-4-28
 tags:
   - software
 categories:
-  - 计算机
+  - computer
 ---
 
 # 关于虚拟机使用

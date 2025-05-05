@@ -2,7 +2,7 @@
 
 const navbar = [
   { text: "主页", link: "/" },
-  { text: "类型", link:"/categories/jisuanji/1.html" },
+  { text: "类型", link:"/categories/computer/1.html" },
   { text: "标签", link:"/tags/software/1.html" },
   // { text: "计算机", link: "/blogs/computer/" },
   { text: "个人模块", link: "/docs/self/" },

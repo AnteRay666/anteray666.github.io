@@ -1,42 +1,44 @@
 // .vuepress/configs/series.ts
 const series = {
-    "/blogs/computer/":[
+    "/blogs/computer":[
                 // "README.md",
         {
             text: "website",
             children:[
-                "website/gitee",
-                "website/github"
+                "/website/gitee",
+                "/website/github",
+                "/website/gitpage"
             ]
 
         },    
         {
             text: "software",
             children:[
-                "software/AtUoVM",
-                "software/Pr"
+                "/software/AtUoVM",
+                "/software/Pr"
             ]
 
         }
     ],
-    "/docs/self/":[
+    "/blogs/programme":[
+        {
+            text:"node.js",
+            children:[
+                "/node.js/node.js",
+                "/node.js/nvm",
+                "/node.js/npm",
+                
+            ]
+        }
+    ]
+    ,
+    "/docs/self":[
         {
             text:"个人",
             children:[
-                "README.md"
+                "/README.md"
             ]
         }
     ],
-    "/docs/theme-reco/": [
-      {
-        text: "module one",
-        children: ["home", "theme"],
-      },
-      {
-        text: "module two",
-        children: ["api", "plugin"],
-      },
-    ],
   };
-  
-  export default series;
+export default series;

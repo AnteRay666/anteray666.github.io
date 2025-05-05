@@ -2,17 +2,26 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_dispatch: # 允许在网页手动触发
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    outputs:
+      run_id: ${{ github.run_id }} # 暴露运行ID给部署步骤
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # 升级到最新版本
+        uses: actions/checkout@v4
+
+      - name: Generate Build ID
+        id: build_id
+        run: |
+          # 生成带时间戳的唯一编号（格式：YYYYMMDD-HHMMSS-RUNID）
+          echo "BUILD_ID=$(date +'%Y%m%d-%H%M%S')-${{ github.run_id }}" >> $GITHUB_ENV
+          echo "🆔 构建编号：${{ env.BUILD_ID }}"
 
       - name: Clean workspace
         run: |
-          # 删除残留的 dist 目录
           rm -rf .vuepress/dist
           echo "🧹 已清理旧构建文件"
 
@@ -20,21 +29,23 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 22
-          cache: "npm" # 启用 npm 缓存加速安装
+          cache: "npm"
 
       - name: Install Dependencies
-        run: npm ci # 更严格的依赖安装方式
+        run: npm ci
 
       - name: Build Project
         run: |
           npm run build
-          echo "✅ 构建完成"
-          ls -al .vuepress/dist  # 验证构建输出
+          # 给构建产物打上编号标记
+          echo "Build ID: ${{ env.BUILD_ID }}" > .vuepress/dist/build-info.txt
+          ls -al .vuepress/dist
 
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .vuepress/dist
-          force_orphan: true # 强制清理历史提交记录
-          keep_files: false # 不保留旧文件
+          force_orphan: true
+          keep_files: false
+          commit_message: "Deploy ${{ env.BUILD_ID }}" # 提交信息包含唯一编号

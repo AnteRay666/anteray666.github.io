@@ -4,7 +4,7 @@ date: 2025-4-29
 tags:
   - software
 categories:
-  - 计算机
+  - computer
 ---
 
 # Adobe Premiere Pro

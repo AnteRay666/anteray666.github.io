@@ -4,7 +4,7 @@ date: 2025-4-29
 tags:
   - website
 categories:
-  - 计算机
+  - computer
 ---
 
 # 关于计算机使用
