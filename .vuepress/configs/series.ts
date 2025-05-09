@@ -30,8 +30,16 @@ const series = {
                 
             ]
         }
-    ]
-    ,
+        ,
+        {
+            text:"other",
+            children:[
+                "/mustache",
+                "/git"
+            ]
+        }
+    ],
+
     "/docs/self":[
         {
             text:"个人",
@@ -40,5 +48,16 @@ const series = {
             ]
         }
     ],
+    "/docs/Vue3":[
+        {
+            text:"Vue3",
+            children:[    
+            "/README.md",
+            "/Start",
+            "/ProjectStructure",
+            "/ref"
+            ]
+        }
+    ]
   };
 export default series;

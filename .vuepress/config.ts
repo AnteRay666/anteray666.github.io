@@ -16,6 +16,8 @@ export default defineUserConfig({
     docsBranch: "main",
     docsDir: "example",
     lastUpdatedText: "",
+    editLink: false, // 是否显示编辑链接
+    // editLinkPattern: ":repo/edit/:branch/:path",
     // series 为原 sidebar
     series,
     navbar,
