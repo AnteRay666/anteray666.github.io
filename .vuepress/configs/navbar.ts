@@ -9,7 +9,8 @@ const navbar = [
     children: [
       { text: "个人", link: "/docs/self/" },
       { text: "Vue3", link: "/docs/Vue3/" },
-      
+      { text:"内存分析工具开发", link:"/docs/Dmat/" },
+      { text:"Electron", link:"/docs/Electron/"},
     ],
   },
 ];

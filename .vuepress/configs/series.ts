@@ -58,6 +58,23 @@ const series = {
             "/ref"
             ]
         }
+    ],
+    "/docs/Dmat":[
+        {
+            text:"内存分析工具开发",
+            children:[
+                "/README.md",
+            ]
+        }
+    ],
+    "/docs/Electron":[
+        {
+            text:"Electron",
+            children:[
+                "/README.md",
+                "/start",
+            ]
+        }
     ]
   };
 export default series;
