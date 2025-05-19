@@ -55,7 +55,11 @@ const series = {
             "/README.md",
             "/Start",
             "/ProjectStructure",
-            "/ref"
+            "/ref",
+            "/reactive",
+            "/Attribute",
+            "/v-on",
+            "/onMounted"
             ]
         }
     ],

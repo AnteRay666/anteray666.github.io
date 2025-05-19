@@ -1,13 +1,18 @@
 import { defineUserConfig } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 import { viteBundler } from '@vuepress/bundler-vite'
-import { webpackBundler } from '@vuepress/bundler-webpack'
+// import { webpackBundler } from '@vuepress/bundler-webpack'
 import { navbar, series } from "./configs"; 
 export default defineUserConfig({
   title: "Ante的个人blog",
   description: "Just playing around",
   bundler: viteBundler(),
   // bundler: webpackBundler(),
+  head:[
+    //
+    ['link', { rel: 'icon', href: '/Ante.png' }
+]
+  ] ,
   theme: recoTheme({
     logo: "/logo.png",
     author: "Ante",
