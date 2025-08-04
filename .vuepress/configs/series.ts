@@ -77,7 +77,9 @@ const series = {
             children:[
                 "/Liquid.md",
                 "/Tags.md",
-                "/Filters.md"
+                "/Filters.md",
+                "/Shopify.md",
+                "/spcon.md"
             ]
         }
     ],   
