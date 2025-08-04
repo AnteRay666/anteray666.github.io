@@ -11,6 +11,7 @@ const navbar = [
       { text: "Vue3", link: "/docs/Vue3/" },
       { text:"内存分析工具开发", link:"/docs/Dmat/" },
       { text:"Electron", link:"/docs/Electron/"},
+      {text:"Shopify",link:"/docs/shopify/"}
     ],
   },
 ];

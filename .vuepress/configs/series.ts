@@ -71,12 +71,23 @@ const series = {
             ]
         }
     ],
+    "/docs/shopify":[
+        {
+            text:"Shopify学习",
+            children:[
+                "/Liquid.md",
+                "/Tags.md",
+                "/Filters.md"
+            ]
+        }
+    ],   
     "/docs/Electron":[
         {
             text:"Electron",
             children:[
                 "/README.md",
                 "/start",
+                "/Rule"
             ]
         }
     ]
