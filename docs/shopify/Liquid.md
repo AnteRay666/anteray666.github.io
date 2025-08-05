@@ -1,3 +1,12 @@
+---
+title: Liquid
+date: 2025-08-01
+tags:
+  - liquid
+categories:
+  - shopify
+---
+
 # Liquid
 
 在 shopify 的开发中,liquid 语言是极为必要的。

@@ -1,3 +1,12 @@
+---
+title: Tags
+date: 2025-08-05
+tags:
+  - liquid
+categories:
+  - shopify
+---
+
 # Tags
 
 ## 注释

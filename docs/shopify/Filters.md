@@ -1,3 +1,12 @@
+---
+title: Filters
+date: 2025-08-05
+tags:
+  - liquid
+categories:
+  - shopify
+---
+
 # Filters
 
 这一部分是一些调用相关函数的一个部分，仅作为阅读了解，直接进入到实战部分进行操作。

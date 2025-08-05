@@ -1,3 +1,12 @@
+---
+title: 重点开发内容
+date: 2025-08-05
+tags:
+  - shopify
+categories:
+  - shopify
+---
+
 # 重点开发内容
 
 包含 3 个部分：

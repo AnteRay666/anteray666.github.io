@@ -18,6 +18,13 @@ const series = {
                 "/software/Pr"
             ]
 
+        },    
+        {
+            text:"toys",
+            children:[
+                "/toys/README",
+                "/toys/pixel",
+            ]
         }
     ],
     "/blogs/programme":[
@@ -27,17 +34,16 @@ const series = {
                 "/node.js/node.js",
                 "/node.js/nvm",
                 "/node.js/npm",
-                
             ]
-        }
-        ,
+        },
         {
             text:"other",
             children:[
                 "/mustache",
-                "/git"
+                "/git",
             ]
         }
+
     ],
 
     "/docs/self":[
@@ -49,7 +55,7 @@ const series = {
         }
     ],
     "/docs/Vue3":[
-        {
+        {   
             text:"Vue3",
             children:[    
             "/README.md",
@@ -79,7 +85,10 @@ const series = {
                 "/Tags.md",
                 "/Filters.md",
                 "/Shopify.md",
-                "/spcon.md"
+                "/spcon.md",
+                "/Input_settings",
+                "/Sidebar_settings",
+                "/Dynamic_data_sources",
             ]
         }
     ],   

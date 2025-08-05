@@ -1,3 +1,12 @@
+---
+title: Shopify
+date: 2025-08-01
+tags:
+  - shopify
+categories:
+  - shopify
+---
+
 # Shopify
 
 ## 主题架构
